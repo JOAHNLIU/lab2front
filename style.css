@@ -1,0 +1,109 @@
+.container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 50px auto;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.top-left {
+    top: 0;
+    left: 0;
+}
+
+.top-right {
+    top: 0;
+    right: 0;
+}
+
+.bottom-left {
+    bottom: 0;
+    left: 0;
+}
+
+.center-right {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transform: translateY(-50%);
+}
+
+.hour-hand {
+    position: absolute;
+    width: 2px;
+    height: 50px;
+    background-color: black;
+    top: 0;
+    left: 50%;
+    transform-origin: bottom;
+    transform: translateX(-50%) rotate(0deg);
+}
+
+.minute-hand {
+    position: absolute;
+    width: 2px;
+    height: 100px;
+    background-color: black;
+    top: 0;
+    left: 50%;
+    transform-origin: bottom;
+    transform: translateX(-50%) rotate(90deg);
+}
+
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    width: 25%;
+}
+
+/* Стилизация для первого ряда */
+tr:first-child {
+    background-color: #7d8f8f; /* Цвет фона для первого ряда */
+    color: #ffffff; /* Контрастный цвет текста */
+}
+
+/* Стилизация для второго ряда */
+tr:nth-child(2) {
+    background-color: #f5f57d; /* Цвет фона для второго ряда */
+    color: #333333; /* Контрастный цвет текста */
+}
+
+/* Эффекты при наведении */
+tr:first-child:hover {
+    background-color: #ffffff; /* Цвет фона при наведении */
+    color: #7d8f8f; /* Контрастный цвет текста при наведении */
+}
+
+tr:nth-child(2):hover {
+    background-color: #333333; /* Цвет фона при наведении */
+    color: #f5f57d; /* Контрастный цвет текста при наведении */
+}
